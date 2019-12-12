@@ -1,0 +1,107 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+body{
+    font-size: 14px;
+}
+
+p{
+    font-size: 14px;
+}
+
+section{
+    padding: 5rem 0;
+    @include device(mobile){
+        padding: 3rem 0;
+    }
+}
+
+.title{
+    @include device(tablet){
+        text-align: center;
+    }
+    @include device(mobile){
+        text-align: center;
+    }
+    &.center{
+        text-align: center;
+        .title-small{
+            justify-content: center;
+            span{
+                display: none;
+            }
+        }
+    }
+    &-small{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        @include device(tablet){
+            justify-content: center;
+        }
+        @include device(mobile){
+            justify-content: center;
+        }
+        &.right{
+            flex-direction: row-reverse;
+            span{
+                margin-right: 15px;
+            }
+        }
+        p{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            position: relative;
+            margin-bottom: 0px;
+        }
+        span{
+            position: relative;
+            top: -2px;
+            display: inline-block;
+            margin-left: 15px;
+            width: 80px;
+            height: 4px;
+            background: rgba(237,35,159,0.6);
+            filter: blur(4px);
+            -o-filter: blur(4px);
+            -ms-filter: blur(4px);
+            -moz-filter: blur(4px);
+            -webkit-filter: blur(4px);
+            border-radius: 5px;
+        }
+    }
+    &-big{
+        h2{
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 52px;
+            text-transform: capitalize;
+            @include device(mobile){
+                font-size: 30px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+button{
+    &.owl-next{
+        &:active{
+            box-shadow: none !important;
+            outline: none !important;
+            border: none !important;
+        }
+        &:focus{
+            box-shadow: none !important;
+            outline: none !important;
+            border: none !important;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+// BASICS
+// import CSS of the basic core we make here
+/* ---------------------------------------------------------------------------------- */
+@import '_partials/reset';
+@import '_partials/variables';
+@import '_partials/mixins';
+@import '_partials/global';
+
+// PAGES
+// import CSS of the page we make here
+/* ---------------------------------------------------------------------------------- */
+
+
+// COMPONENTS
+// import CSS of the component we use here
+/* ---------------------------------------------------------------------------------- */
+@import '_partials/header';
+@import '_partials/footers';
+@import '_partials/banner';
+@import '_partials/button';
+@import '_partials/features';
+@import '_partials/testimonial';
+@import '_partials/blogs';
+@import '_partials/login';

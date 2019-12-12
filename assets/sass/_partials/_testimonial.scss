@@ -1,0 +1,200 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+.testimonial{
+    .testimonial-1{
+        background: #fbfbfd;
+        padding-top: 200px;
+        padding-bottom: 140px;
+        overflow: hidden;
+        position: relative;
+        .text-shadow{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+            &::before{
+                content: attr(data-line);
+                position: absolute;
+                left: 0px;
+                width: 100%;
+                text-align: center;
+                color: #f6f6fa;
+                font-weight: 700;
+                background-image: -webkit-linear-gradient(310deg, #672dde 0%, #4069eb 100%);
+                background-image: -o-linear-gradient(310deg, #672dde 0%, #4069eb 100%);
+                background-image: linear-gradient(140deg, #672dde 0%, #4069eb 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: "Poppins", sans-serif;
+                font-size: 200px;
+                line-height: 200px;
+                z-index: -1;
+                text-transform: uppercase;
+                top: 50%;
+                opacity: 0.035;
+            }
+        }
+        >.container{
+            position: relative;
+            z-index: 1;
+            .shape{
+                position: absolute;
+                opacity: 0.02;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border-radius: 45px;
+                left: 90px;
+                z-index: -1;
+                &.one{
+                    background-image: -moz-linear-gradient(140deg, #7d0df0 0%, #0cb6e7 100%);
+                    background-image: -webkit-linear-gradient(140deg, #7d0df0 0%, #0cb6e7 100%);
+                    background-image: -ms-linear-gradient(140deg, #7d0df0 0%, #0cb6e7 100%);
+                    width: 650px;
+                    height: 510px;
+                    top: -155%;
+                }
+                &.two{
+                    background-image: -moz-linear-gradient(140deg, #7d0df0 0%, #0cb6e7 100%);
+                    background-image: -webkit-linear-gradient(140deg, #7d0df0 0%, #0cb6e7 100%);
+                    background-image: -ms-linear-gradient(140deg, #7d0df0 0%, #0cb6e7 100%);
+                    width: 666px;
+                    height: 330px;
+                    top: -145%;
+                    left: 290px;
+                }
+            }
+            .owl-prev{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: white;
+                -webkit-box-shadow: 0px 3px 4px 0px rgba(12, 0, 46, 0.06);
+                box-shadow: 0px 3px 4px 0px rgba(12, 0, 46, 0.06);
+                font-size: 20px;
+                color: #222d39;
+                border: 0px;
+                line-height: 50px;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                -webkit-transition: all 0.2s linear;
+                -o-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+                cursor: pointer;
+                left: 15px;
+                &:hover{
+                    background: #4069eb;
+                    color: #fff;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+            .owl-next{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: white;
+                -webkit-box-shadow: 0px 3px 4px 0px rgba(12, 0, 46, 0.06);
+                box-shadow: 0px 3px 4px 0px rgba(12, 0, 46, 0.06);
+                font-size: 20px;
+                color: #222d39;
+                border: 0px;
+                line-height: 50px;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                -webkit-transition: all 0.2s linear;
+                -o-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+                cursor: pointer;
+                right: 15px;
+                &:hover{
+                    background: #4069eb;
+                    color: #fff;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+            .owl-dots{
+                margin-top: 30px;
+                text-align: center;
+            }
+            .testimonial-slider{
+                max-width: 690px;
+                margin: 0 auto;
+                .item{
+                    .img{
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        margin: 0 auto 15px;
+                        img{
+                            width: auto;
+                            border-radius: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    .caption{
+                        margin-bottom: 35px;
+                        h6{
+                            color: #222d39;
+                            font-weight: 500;
+                            font-family: "Poppins", sans-serif;
+                            font-size: 18px;
+                            margin-bottom: 0!important;
+                        }
+                        p{
+                            color: #959cb1;
+                            font-size: 14px;
+                            margin-bottom: 0px;
+                            font-weight: 400;
+                        }
+                    }
+                    p{
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonial-slider{
+    .owl-dots{
+        .owl-dot{
+            background: #bfbfbf;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0 5px;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            &.active{
+                background: $primary;
+                width: 35px;
+                height: 15px;
+                border-radius: 15px;
+                margin: 0 5px;
+                -webkit-transition: all .5s ease-in-out;
+                -moz-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+}

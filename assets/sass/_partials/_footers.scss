@@ -1,0 +1,97 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+footer{
+    background-image: url('../../assets/img/shape_footer.png');
+    padding: 120px 0;
+    position: relative;
+    @include device(mobile){
+        padding: 50px 0;
+    }
+    .footer-logo{
+        text-align: center;
+        img{
+            width: 30%;
+        }
+    }
+    .navbar{
+        background: transparent;
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+        width: 100%;
+        .nav{
+            &-item{
+                margin-right: 40px;
+                .nav-link{
+                    font: 500 14px/100px $font-family;
+                    text-transform: uppercase;
+                    color: #05364d;
+                    padding: 0px;
+                    font-size: 12px;
+                    display: inline-block;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .footer-social{
+        text-align: center;
+        margin: 5px 0px 30px;
+        a{
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 36px;
+            color: #05364d;
+            font-size: 16px;
+            margin-right: 12px;
+            -webkit-transition: all 0.4s ease 0s;
+            -moz-transition: all 0.4s ease 0s;
+            -o-transition: all 0.4s ease 0s;
+            transition: all 0.4s ease 0s;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                color: #ffffff;
+                background: $primary;
+                // background: -webkit-linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+                // background: -moz-linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+                // background: -o-linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+                // background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+            }
+        }
+    }
+    .footer-bottom{
+        text-align: center;
+        p{
+            margin-bottom: 0;
+            color: #fff;
+        }
+    }
+    a{
+        font-weight: 600;
+        color: $primary;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        &:focus{
+            text-decoration: none;
+            color: $primary;
+        }
+        &:hover{
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+}
